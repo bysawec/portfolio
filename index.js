@@ -7,6 +7,7 @@
     const skills = document.querySelector('.skills');
     const loading = document.querySelector('.Loading');
     const bar = document.querySelectorAll('.bar');
+    const elem3 = document.querySelector('.portfolio-design');
     const observer = new IntersectionObserver((entries) => {
         // Loop over the entries
         entries.forEach((entry) => {
@@ -21,7 +22,7 @@
                     bar[2].style.width = '99%';
                     bar[3].style.width = '95%';
                     bar[4].style.width = '90%';
-                }, 500);
+                }, 100);
             } else {
                 bar.forEach((bar) => {
                     bar.style.width = '0%';
@@ -45,7 +46,9 @@
         let y = `${0 - (_mouseY - _h) * 0.001}%`;
         let x2 = `${0 + (_mouseX - _w) * 0.005}%`;
         let y2 = `${0 + (_mouseY - _h) * 0.005}%`;
-
+        let x3 = `${0 - (_mouseX - _w) * 0.005}%`;
+        let y3 = `${0 - (_mouseY - _h) * 0.005}%`
+        elem3.style.transform = `translate(${x3}, ${y3})`;
         elem2.style.transform = `translate(${x2}, ${y2})`;
         elem.style.transform = `translate(${x}, ${y})`;
     }

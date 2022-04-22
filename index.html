@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>bySaw</title>
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -21,7 +21,7 @@
             <div class="header-buttons">
                 <a href="#">HOME</a>
                 <a href="#skills">ABOUT</a>
-                <a href="#">PORTFOLIO</a>
+                <a href="#portfolio">PORTFOLIO</a>
                 <a href="#">CONTACTS</a>
             </div>
         </div>
@@ -161,7 +161,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio-title" style="margin-top: 8rem">
                     <span style="color: #800080">{</span>MY PORTFOLIO<span
@@ -173,20 +173,64 @@
                     <div class="card">
                         <div class="card-title">COVID-TRACKER</div>
                         <div class="card-content">
-                            <img src="assets/covid.png" alt="" />
+                            <a
+                                href="https://bysawec.github.io/covid19-tracker/"
+                            >
+                                <img src="assets/covid.png" alt="" />
+                            </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-title">OPEN BOMBER</div>
                         <div class="card-content">
-                            <img src="assets/bomber.png" alt="" />
+                            <a href="https://www.openbomber.xyz/"
+                                ><img src="assets/bomber.png" alt=""
+                            /></a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-title">ONLINE CHAT</div>
                         <div class="card-content">
-                            <img src="assets/chat.png" alt="" />
+                            <a href="https://chat-litereact.herokuapp.com/"
+                                ><img src="assets/chat.png" alt=""
+                            /></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                style="position: relative; z-index: -1; left: 80%; bottom: 5rem"
+                src="assets/design.png"
+                class="portfolio-design"
+            />
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div style="margin-right: 3rem;" class="contacts-title">
+                    <span style="color: #800080">{</span>CONTACT ME<span
+                        style="color: #800080"
+                        >}</span
+                    >
+                </div>
+                <div class="contacts-main">
+                    <div class="email">
+                        gabovdelovoy<span style="color: #800080"
+                            >@gmail.com</span
+                        >
+                    </div>
+                    <div class="socials">
+                        <a href="https://t.me/bysaw7">
+                            <img
+                                src="assets/telegram.png"
+                                alt="telegram"
+                            />
+                        </a>
+                        <a href="https://github.com/bysawec">
+                            <img src="assets/github.png" alt="" />
+                        </a>
+                        <a href="https://vk.com/bysawec">
+                            <img src="assets/vk.svg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
