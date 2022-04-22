@@ -31,7 +31,7 @@
             }
         });
     });
-
+    
     // Tell the observer which elements to track
     observer.observe(document.querySelector('.skills'));
 
@@ -47,7 +47,7 @@
         let x2 = `${0 + (_mouseX - _w) * 0.005}%`;
         let y2 = `${0 + (_mouseY - _h) * 0.005}%`;
         let x3 = `${0 - (_mouseX - _w) * 0.005}%`;
-        let y3 = `${0 - (_mouseY - _h) * 0.005}%`
+        let y3 = `${0 - (_mouseY - _h) * 0.005}%`;
         elem3.style.transform = `translate(${x3}, ${y3})`;
         elem2.style.transform = `translate(${x2}, ${y2})`;
         elem.style.transform = `translate(${x}, ${y})`;

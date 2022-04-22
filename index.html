@@ -10,6 +10,11 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         />
+        <script>
+            function chh(px) {
+                document.querySelector('.mini').style.height = px + 'px';
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     </head>
     <body>
@@ -63,6 +68,8 @@
                         >
 
                         <a
+                            onmouseover="chh(20)"
+                            onmouseout="chh(1)"
                             style="
                                 text-decoration: none;
                                 color: white;
@@ -75,16 +82,9 @@
                                 flex-direction: row;
                                 align-items: center;
                             "
-                            href="#"
-                            ><div
-                                style="
-                                    width: 1rem;
-                                    height: 1px;
-                                    background: #800080;
-                                    border: 3px solid #800080;
-                                    margin-right: 1rem;
-                                "
-                            ></div>
+                            class="btn"
+                            href="#contacts"
+                            ><div class="mini"></div>
                             MY CONTACTS</a
                         >
                     </div>
@@ -206,7 +206,7 @@
         </section>
         <section class="contacts" id="contacts">
             <div class="container">
-                <div style="margin-right: 3rem;" class="contacts-title">
+                <div style="margin-right: 3rem" class="contacts-title">
                     <span style="color: #800080">{</span>CONTACT ME<span
                         style="color: #800080"
                         >}</span
@@ -220,10 +220,7 @@
                     </div>
                     <div class="socials">
                         <a href="https://t.me/bysaw7">
-                            <img
-                                src="assets/telegram.png"
-                                alt="telegram"
-                            />
+                            <img src="assets/telegram.png" alt="telegram" />
                         </a>
                         <a href="https://github.com/bysawec">
                             <img src="assets/github.png" alt="" />
