@@ -99,9 +99,8 @@ body {
     height: 100%;
     background: #800080;
     transition: 4s ease;
-
 }
-.hardskills{
+.hardskills {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -113,4 +112,44 @@ body {
     width: 50rem;
 }
 
-
+.portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.19em;
+}
+.portfolio-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    height: 25rem;
+    margin: 2rem 2rem;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.card-content {
+    transition: 0.3s ease;
+    border-radius: 4px;
+    width: 100%;
+    height: 25rem;
+    margin-top: 2rem;
+}
+.card-content:hover {
+    transform: scale(1.1);
+}
+.card-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.19em;
+}
