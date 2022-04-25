@@ -4,6 +4,7 @@
     }
     .hardskill {
         width: 100%;
+        margin-bottom: 0.5rem;
     }
 }
 @media only screen and (max-width: 1250px) {
@@ -43,6 +44,9 @@
     }
 }
 @media only screen and (max-width: 680px) {
+    .skills-main-info {
+        font-size: 20px;
+    }
     .btn {
         margin-top: 1rem;
     }
