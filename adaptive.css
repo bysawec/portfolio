@@ -2,6 +2,9 @@
     .about-image {
         display: none;
     }
+    .hardskill {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 1250px) {
     .contacts-title {
@@ -66,6 +69,5 @@
     }
     .socials > a > img {
         width: 3rem;
-        
     }
 }
