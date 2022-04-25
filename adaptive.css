@@ -1,0 +1,71 @@
+@media only screen and (max-width: 1500px) {
+    .about-image {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .contacts-title {
+        font-size: 30px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+    .contacts-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .portfolio-main {
+        flex-direction: column;
+    }
+    .card {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .hardskills {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .about-image {
+        display: none;
+    }
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .btn {
+        margin-top: 1rem;
+    }
+    .front {
+        font-size: 50px;
+    }
+    .head {
+        font-size: 30px;
+    }
+    .container {
+        margin: 0 25px;
+    }
+    .email {
+        font-size: 20px;
+    }
+    .skills-main-title {
+        font-size: 50px;
+    }
+    .skills-title {
+        width: 100%;
+        font-size: 30px;
+        line-height: 2rem;
+        letter-spacing: 0.01em;
+    }
+    .socials > a > img {
+        width: 3rem;
+        
+    }
+}

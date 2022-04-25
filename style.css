@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap');
-html {
-    color: white;
+* {
 }
 body {
+    color: white;
+
     background: #101010;
     font-family: 'Tajawal', sans-serif;
     font-weight: bold;
@@ -15,76 +16,126 @@ body {
     margin-bottom: 8rem;
 }
 .header-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+    display: flex;
+}
+.front{
+    font-size: 5rem;
+    height: 200px;
+}
+.dev {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
+    letter-spacing: 0.19em;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .header-buttons a {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0 2rem;
     text-decoration: none;
 }
 .container {
     margin: 0 100px;
 }
+.head {
+    margin: 1rem 0;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+}
+.main-title {
+    display: flex;
+    flex-direction: column;
+}
 .about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about-decor {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #800080;
-    line-height: 29px;
+    line-height: 1.8125rem;
     /* identical to box height */
 
     letter-spacing: 0.105em;
 }
-.laptop {
+#about-image-design {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
     transition: 1s linear;
     position: relative;
+    max-width: 30%;
+    height: auto;
+    transition: 1s linear;
+    position: relative;
+    max-width: 30%;
+    height: auto;
+    left: 25%;
+    bottom: 50%;
+}
+.laptop {
+    margin: 2rem 0;
+    transition: 1s linear;
+    position: relative;
+    width: 60%;
+    height: auto;
 }
 #about-image-design {
-    transition: 1s linear;
-    position: relative;
 }
 .skills {
+    margin-top: 7rem;
+    padding-bottom: 5rem;
     background: #232323;
 }
 .skills-title {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
     letter-spacing: 0.19em;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: center;
     padding-top: 80px;
+    display: inline-block;
 }
 .skills-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 90px;
+    flex-wrap: wrap;
 }
 .skills-main-title {
     font-weight: 700;
-    font-size: 72px;
-    line-height: 86px;
-    letter-spacing: 0.19em;
+    font-size: 4.5rem;
+    letter-spacing: 0.1em;
 }
 .skills-main-info {
     margin-top: 10px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.19em;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
     max-width: 600px;
 }
 .Loading {
     position: relative;
     display: inline-block;
-    width: 40rem;
+    width: 100%;
     height: 1rem;
     background: #f1f1f1;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
@@ -100,22 +151,31 @@ body {
     background: #800080;
     transition: 4s ease;
 }
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .hardskills {
     display: flex;
     flex-direction: column;
+    width: 50%;
     gap: 2.5rem;
+
 }
 .hardskill {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50rem;
+    width: 90%;
 }
 
 .portfolio-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
     letter-spacing: 0.19em;
 }
 .portfolio-main {
@@ -124,13 +184,13 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 8rem;
+    flex-wrap: wrap;
 }
 .card {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 25%;
-    height: 25rem;
     margin: 2rem 2rem;
     border-radius: 4px;
     transition: 0.3s ease;
@@ -139,7 +199,7 @@ body {
     transition: 0.3s ease;
     border-radius: 4px;
     width: 100%;
-    height: 25rem;
+    height: 100%;
     margin-top: 2rem;
     cursor: pointer;
 }
@@ -148,13 +208,19 @@ body {
 }
 .card-title {
     font-weight: 500;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
     text-align: center;
     letter-spacing: 0.19em;
 }
 .portfolio-design {
+    width: 15%;
+    height: auto;
     transition: 1s linear;
+    position: relative;
+    z-index: -1;
+    left: 80%;
+    bottom: 5rem;
 }
 .contacts {
     background: black;
@@ -162,36 +228,38 @@ body {
 }
 .contacts-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
     letter-spacing: 0.19em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-top: 7rem;
+    margin-right: 3rem
 }
 .contacts-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 90px;
+    flex-wrap: wrap;
 }
 .email {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
     letter-spacing: 0.19em;
 }
 .socials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 4rem;
+    flex-wrap: wrap;
 }
 
 .socials img {
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: auto;
     margin: 0 2rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -201,6 +269,12 @@ body {
 }
 .socials a {
     text-decoration: none;
+}
+
+.card-content > a > img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 body::-webkit-scrollbar {

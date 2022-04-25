@@ -1,11 +1,23 @@
+new Typewriter('.front', {
+    strings: [
+        'Frontend<br/>Developer',
+        'Programmer',
+        'Web<br/>Developer',
+        'Backend<br/>Developer',
+        'Gamer',
+        'Dog<br/>lover',
+        'Traveler',
+        'Procrastinator',
+    ],
+    autoStart: true,
+    loop: true,
+    pauseFor: 2000
+});
 (function () {
-    console.log('Hello World');
     // Add event listener
     document.addEventListener('mousemove', parallax);
     const elem = document.querySelector('.laptop');
     const elem2 = document.querySelector('#about-image-design');
-    const skills = document.querySelector('.skills');
-    const loading = document.querySelector('.Loading');
     const bar = document.querySelectorAll('.bar');
     const elem3 = document.querySelector('.portfolio-design');
     const observer = new IntersectionObserver((entries) => {
@@ -31,7 +43,7 @@
             }
         });
     });
-    
+
     // Tell the observer which elements to track
     observer.observe(document.querySelector('.skills'));
 
